@@ -1,0 +1,245 @@
+/** create by Sam on 2019/10/28 **/
+
+/*=======================强制样式===========================*/
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'MicrosoftYaHei',Arial, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    /*background-color: #f6f7f9;*/
+}
+body, html {
+    height: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+body{
+    /*font-size: 14px;*/
+}
+
+ul,ol,li,dl,dt,dd{
+    text-decoration: none;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6, input, select, textarea {
+    font-size: 100%;
+}
+
+
+/*=======================公共样式-大=========================*/
+/*两边缩进的内容*/
+.comm-container{
+    width: 100%;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.comm-bottomnav-content{
+    margin-bottom: 70px;
+    margin-top: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.comm-topnav-content{
+    /*margin-top: 50px;*/
+    position: relative;
+    top: 50px;
+    margin-bottom: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.comm-none-label{
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    font-size: 14px;
+    color: #A9A9A9;
+}
+input, select, textarea {
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+/*页面标题：渐变*/
+.comm-title-jianbian{
+    width: 100%;
+    height: 160px;
+    padding: 80px 20px 20px 20px;
+    line-height: 60px;
+    background: -webkit-linear-gradient(left, #ffc965 , #ffaa31);
+    background: -o-linear-gradient(right, #ffc965 , #ffaa31);
+    background: -moz-linear-gradient(right, #ffc965 , #ffaa31);
+    background: linear-gradient(to right, #ffc965 , #ffaa31);
+    color: white;
+    position: relative;
+    top: 0px;
+    text-align: center;
+}
+
+/*宽大按钮*/
+.comm-btn-big{
+    display: block;
+    /*margin: 0 auto;*/
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    /*box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);*/
+}
+/*宽大按钮-黄*/
+.comm-btn-big-yellow{
+    color: #fff;
+    background-color: #ffaf45;
+}
+/*宽大白按钮*/
+.comm-btn-big-white{
+    color: #000;
+    background: #eaeaea;
+}
+
+
+/*===================公共样式-小==========================*/
+/*清除浮动*/
+.clear:after{
+    display:block;
+    content:' ';
+    clear:both;
+}
+
+/*上方固定*/
+.fix-top{
+    width: 100%;
+    position: fixed !important;
+    top: 0px;
+    z-index: 1000;
+}
+/*下方固定*/
+.fix-bottom{
+    position: fixed !important;
+    bottom: 0px;
+    z-index: 1000;
+}
+/*左方固定*/
+.fix-left{
+    position: fixed !important;
+    left: 0px;
+    z-index: 1000;
+}
+/*右方固定*/
+.fix-right{
+    position: fixed !important;
+    right: 0px;
+    z-index: 1000;
+}
+.btn-red{
+    color: #fff;
+    background-color: #ed424b;
+}
+.btn-white{
+    color: #000;
+    background-color: #fff;
+}
+.hidden{
+    display: none;
+}
+[hidden] {
+    display: none;
+}
+.red{
+    color: #ed424b;
+}
+.bred{
+    background-color: #ed424b;
+}
+.yellow{
+    color: #ffaf45;
+}
+.byellow{
+    background-color: #ffaf45;
+}
+.white{
+    color: #fff;
+}
+.bwhite{
+    background-color: #fff;
+}
+.blue{
+    color: #006bd2;
+}
+.bblue{
+    background-color: #006bd2;
+}
+.gray{
+    color: #a9a9a9;
+}
+.lightgray{
+    color: #eeeeee;
+}
+.dark {
+    color: #8d8d8d;
+}
+.left{
+    text-align: left;
+}
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.ov{
+    overflow: hidden;
+}
+.fs12{
+    font-size: 12px;
+}
+.fs14{
+    font-size: 14px;
+}
+.fs16{
+    font-size: 16px;
+}
+.fs18{
+    font-size: 18px;
+}
+.fs20{
+    font-size: 20px;
+}
+.bold{
+    font-weight: bold;
+}
+.dadian{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/*===================插件定制========================*/
+.nut-tabbar{
+    border-bottom: none !important;
+}
+.nut-tabbar .tabbar-nav.curr {
+    color: #ffaf45 !important;
+}
